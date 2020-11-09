@@ -1,5 +1,7 @@
 <template>
   <div class="hello">
+    <input type="text" v-model="nuevoAtleta">
+    <button @click="agregarNuevoAtleta">Agregar</button>
     <button @click="ordenar">Ordenar por nombre</button>
     <button @click="ordenarPorDeporte">Ordenar por deporte</button>
     <button @click="ordenarPorPais">Ordenar por pais</button>
@@ -53,9 +55,15 @@ export default {
     return {
       search: "",
       atletas: atletasData.atletas,
+      nuevoAtleta: '',
     };
   },
   methods: {
+    agregarNuevoAtleta () {
+     this.atletas.push({
+      nombre: this.nuevoAtleta
+    });
+    },
     ordenar() {
       this.atletas = this.atletas.sort((a, b) =>
         a.nombre > b.nombre ? 1 : -1
