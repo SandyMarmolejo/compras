@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <input type="text" v-model="nuevoAtleta">
+    <input type="text" placeholder="Agrega nuevo atleta" v-model="nuevoAtleta" @keyup.enter="agregarNuevoAtleta">
     <button @click="agregarNuevoAtleta">Agregar</button>
     <button @click="ordenar">Ordenar por nombre</button>
     <button @click="ordenarPorDeporte">Ordenar por deporte</button>
@@ -22,6 +22,9 @@
           <td>
             Equipo
           </td>
+          <td>
+            Peso
+          </td>
         </th>
       </thead>
       <tbody>
@@ -35,9 +38,14 @@
           <td>
             {{atleta.equipo}}
           </td>
+          <td>
+            <input type="number" v-model.number="atleta.peso">
+            <span v-if="atleta.peso === 0">Alerta</span>
+          </td>
         </tr>
       </tbody>
      </table>
+     <h4>Total : </h4>
   </div>
 </template>
 
@@ -61,8 +69,9 @@ export default {
   methods: {
     agregarNuevoAtleta () {
      this.atletas.push({
-      nombre: this.nuevoAtleta
+      nombre: this.nuevoAtleta,
     });
+     this.nuevoAtleta = '';
     },
     ordenar() {
       this.atletas = this.atletas.sort((a, b) =>

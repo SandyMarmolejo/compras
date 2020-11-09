@@ -1,8 +1,6 @@
 <template>
   <div class="deportes">
     <h1>Deportes por Temporada</h1>
-    <input type="text" v-model="nuevaDisciplina">
-    <button @click="agregarNuevaDisciplina">Agregar</button>
     <table>
       <thead>
         <th>
@@ -34,15 +32,10 @@ export default {
   data() {
     return {
       atletas: atletasData.atletas,
-      nuevaDisciplina: ''
     };
   },
   methods:{
-    agregarNuevaDisciplina () {
-     this.atletas.disciplinas.push({
-      disciplina: this.nuevaDisciplina, temporada:1, año: 2, ciudad: 3, medalla: 4
-    })
-    }
+    
   }
 }
 </script>
