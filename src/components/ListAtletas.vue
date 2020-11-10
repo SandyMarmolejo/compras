@@ -45,7 +45,7 @@
         </tr>
       </tbody>
      </table>
-     <h4>Total : </h4>
+     <h4>Total : {{sumarPesos}}</h4>
   </div>
 </template>
 
@@ -64,6 +64,8 @@ export default {
       search: "",
       atletas: atletasData.atletas,
       nuevoAtleta: '',
+      // disciplinas: atletasData.atletas.map(item => item.disciplinas),
+      // paises: atletasData.atletas.map(item => item.equipo).filter((value, index, self) => self.indexOf(value) === index).sort()
     };
   },
   methods: {
@@ -105,6 +107,14 @@ export default {
         //return atleta.nombre.toLowerCase() === 'matteo bisiani';
         return atleta.nombre.toLowerCase().includes(this.search.toLowerCase());
       });
+    },
+    sumarPesos() {
+      let total = 0
+      for(let atleta of this.atletas) {
+        total = total + parseInt(atleta.peso);
+      }
+
+      return total;
     },
   },
 };

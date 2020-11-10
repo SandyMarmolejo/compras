@@ -31,7 +31,7 @@ export default  {
       "disciplinas": [
         {
           "disciplina": "Archery Women's Team",
-          "temporada": "Summer",
+          "temporada": "Winter",
           "año": 2000,
           "ciudad": "Sydney",
           "medalla": "Silver"
@@ -76,7 +76,7 @@ export default  {
       "disciplinas": [
         {
           "disciplina": "Archery Men's Individual",
-          "temporada": "Summer",
+          "temporada": "Winter",
           "año": 2000,
           "ciudad": "Sydney",
           "medalla": "Gold"
@@ -121,14 +121,14 @@ export default  {
       "disciplinas": [
         {
           "disciplina": "Archery Men's Team",
-          "temporada": "Summer",
+          "temporada": "Winter",
           "año": 2000,
           "ciudad": "Sydney",
           "medalla": "Gold"
         },
         {
           "disciplina": "Archery Men's Team",
-          "temporada": "Summer",
+          "temporada": "Winter",
           "año": 2004,
           "ciudad": "Athina",
           "medalla": "Gold"
@@ -218,7 +218,7 @@ export default  {
       "disciplinas": [
         {
           "disciplina": "Athletics Men's 4 x 400 metres Relay",
-          "temporada": "Summer",
+          "temporada": "Winter",
           "año": 2000,
           "ciudad": "Sydney",
           "medalla": "Silver"
@@ -237,7 +237,7 @@ export default  {
       "disciplinas": [
         {
           "disciplina": "Athletics Women's 4 x 400 metres Relay",
-          "temporada": "Summer",
+          "temporada": "Winter",
           "año": 2000,
           "ciudad": "Sydney",
           "medalla": "Gold"
@@ -256,7 +256,7 @@ export default  {
       "disciplinas": [
         {
           "disciplina": "Athletics Men's 5,000 metres",
-          "temporada": "Summer",
+          "temporada": "Winter",
           "año": 2000,
           "ciudad": "Sydney",
           "medalla": "Bronze"
@@ -308,14 +308,14 @@ export default  {
       "disciplinas": [
         {
           "disciplina": "Fencing Men's Foil, Team",
-          "temporada": "Summer",
+          "temporada": "Winter",
           "año": 2000,
           "ciudad": "Sydney",
           "medalla": "Gold"
         },
         {
           "disciplina": "Fencing Men's Foil, Individual",
-          "temporada": "Summer",
+          "temporada": "Winter",
           "año": 2004,
           "ciudad": "Athina",
           "medalla": "Gold"
@@ -405,7 +405,7 @@ export default  {
       "disciplinas": [
         {
           "disciplina": "Gymnastics Men's Team All-Around",
-          "temporada": "Summer",
+          "temporada": "Winter",
           "año": 2000,
           "ciudad": "Sydney",
           "medalla": "Gold"
@@ -443,7 +443,7 @@ export default  {
       "disciplinas": [
         {
           "disciplina": "Handball Men's Handball",
-          "temporada": "Summer",
+          "temporada": "Winter",
           "año": 2000,
           "ciudad": "Sydney",
           "medalla": "Silver"
@@ -481,7 +481,7 @@ export default  {
       "disciplinas": [
         {
           "disciplina": "Hockey Men's Hockey",
-          "temporada": "Summer",
+          "temporada": "Winter",
           "año": 2000,
           "ciudad": "Sydney",
           "medalla": "Bronze"
@@ -500,7 +500,7 @@ export default  {
       "disciplinas": [
         {
           "disciplina": "Hockey Men's Hockey",
-          "temporada": "Summer",
+          "temporada": "Winter",
           "año": 2000,
           "ciudad": "Sydney",
           "medalla": "Bronze"
